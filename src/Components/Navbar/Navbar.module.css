@@ -1,0 +1,372 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 90vw;
+  z-index: 1000;
+  transition: top 0.3s ease;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1130px) and (min-width: 769px) {
+  .navbar {
+    padding: 1rem 1rem;
+    width: 97vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+    width: 93vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 1rem 2rem;
+    width: 88vw;
+  }
+}
+
+.screens {
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .screens {
+    margin-top: 60px;
+  }
+}
+
+.logo img {
+  height: 20px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navLinks ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navLinks ul li {
+  cursor: pointer;
+  font-family: Metropolis;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-right: 1rem;
+}
+
+.demoButton {
+  width: 142px;
+  height: 48px;
+  top: 32px;
+  left: 1402px;
+  padding: 15px 16px 15px 16px;
+  gap: 4px;
+  border-radius: 12px;
+  background-color: var(--primaryOrange);
+  border: none;
+  color: #ffffff;
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.demoButton:hover {
+  background-color: var(--textWhite);
+  color: var(--primaryOrange);
+  border: 1px solid var(--primaryOrange);
+}
+
+.loginButton {
+  width: 142px;
+  height: 48px;
+  top: 32px;
+  left: 1402px;
+  padding: 15px 16px 15px 16px;
+  gap: 4px;
+  border-radius: 12px;
+  background-color: var(--primaryBlue);
+  border: none;
+  color: #ffffff;
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: var(--textWhite);
+  color: var(--primaryBlue);
+  border: 1px solid var(--primaryBlue);
+}
+
+.dropbtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 1;
+  width: 229px;
+  height: 186px;
+  border-radius: 12px;
+  padding: 16px;
+  gap: 1rem;
+}
+
+.dropdownContent p {
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  float: none;
+  color: var(--textBlack);
+  text-decoration: none;
+  display: block;
+  margin: 20px 0px;
+}
+
+.dropdownContent p:hover {
+  color: var(--primaryOrange);
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.mobileIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileMenu ul li {
+  padding: 1rem 0;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Metropolis, sans-serif";
+}
+
+.getStarted {
+  text-align: center;
+}
+
+.contactButton {
+  display: block;
+  margin: 1rem 0;
+  color: #1a53b5;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .mobileIcon {
+    display: block;
+    color: #1a53b5;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileMenu {
+    display: none;
+  }
+}
+
+/* 
+  .navbar {
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  .navLinksContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLinks {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+  }
+  
+  .navLinks li {
+    cursor: pointer;
+  }
+  
+  .dropdownContainer {
+    position: relative;
+  }
+  
+  .dropdownButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdownMenu a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+  }
+  
+  .dropdownMenu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .navButtons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .bookDemoButton {
+    background-color: #ff7f41;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .loginButton {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .mobileMenuIcon {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mobileMenu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+  }
+  
+  .mobileNavLinks {
+    list-style-type: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .mobileNavButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .getStartedButton {
+    background-color: #ff7f41;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navLinksContainer {
+      display: none;
+    }
+  
+    .mobileMenuIcon {
+      display: block;
+    }
+  
+    .mobileMenu {
+      display: flex;
+    }
+  } */

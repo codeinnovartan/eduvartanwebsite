@@ -1,0 +1,197 @@
+.container {
+  padding: 1rem 6rem;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+}
+
+.title {
+  color: var(--textBlack);
+  font-family: Metropolis;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .title {
+    max-width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.description {
+  color: var(--Text-Grey, #494949);
+  text-align: center;
+  font-family: Metropolis;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .description {
+    display: none;
+  }
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  position: relative;
+  max-height: 480px;
+  margin-top: 32px;
+  align-items: center;
+  color: var(--Text-White, #fff);
+  justify-content: center;
+  padding: 122px 80px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .heroSection {
+    max-width: 100%;
+    padding: 100px 20px;
+  }
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroContent {
+  position: relative;
+  display: flex;
+  margin-bottom: -24px;
+  width: 647px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .heroContent {
+    margin-bottom: 10px;
+  }
+}
+
+.heroTitle {
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Metropolis;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+@media (max-width: 991px) {
+  .heroTitle {
+    font-family: Metropolis;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+  }
+}
+
+.eduvartanContainer {
+  margin: 0px;
+  padding: 0px 10px;
+  background: var(--primaryBlue);
+  border-radius: 20px;
+}
+
+.ctaWrapper {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 260px;
+  max-width: 100%;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  justify-content: start;
+}
+
+.ctaButton {
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  background: var(--primaryOrange);
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  width: 260px;
+  gap: 4px;
+  margin: auto 0;
+  padding: 17px 20px;
+  border: none;
+  cursor: pointer;
+  color: var(--Text-White, #fff);
+}
+
+.ctaButtonBlue {
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  background: var(--primaryBlue);
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  width: 260px;
+  gap: 4px;
+  margin: auto 0;
+  padding: 17px 20px;
+  border: none;
+  cursor: pointer;
+  color: var(--Text-White, #fff);
+  display: none
+}
+
+@media (max-width: 991px) {
+  .ctaButtonBlue {
+    display: flex
+  }
+}
+
+.ctaText {
+  font-feature-settings: "liga" off, "clig" off;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.ctaIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 18px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
